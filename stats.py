@@ -1,6 +1,5 @@
 def get_num_words(text):
     num_words = len(text.split())
-    print(f"Found {num_words} total words")
     return num_words
 
 def get_num_characters(text):
@@ -11,5 +10,4 @@ def get_num_characters(text):
             characters[char] = 1
         else:
             characters[char] += 1
-    print(characters)
     return characters

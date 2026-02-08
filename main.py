@@ -7,7 +7,11 @@ def get_book_texts(filepath):
 
 def main():
     text = get_book_texts("books/frankenstein.txt")
-    get_num_words(text)
-    get_num_characters(text)
+
+    num_words = get_num_words(text)
+    print(f"Found {num_words} total words")
+
+    characters = get_num_characters(text)
+    print(characters)
 
 main()
